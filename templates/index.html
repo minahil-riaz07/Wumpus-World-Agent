@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wumpus Agent</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h2>Wumpus Logic Agent</h2>
+
+<div class="panel">
+    Rows: <input id="rows" type="number" value="4">
+    Cols: <input id="cols" type="number" value="4">
+    <button onclick="init()">New Game</button>
+    <button onclick="step()">Step</button>
+</div>
+<div id="info">Ready</div>
+<div class="main">
+
+    <div id="grid"></div>
+
+    <div class="side-horizontal">
+
+        <div class="box">
+            Visited Cells
+            <p id="visitedCount">0</p>
+        </div>
+
+        <div class="box">
+            KB Clauses
+            <div id="kb" class="kb-box"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
